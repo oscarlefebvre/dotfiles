@@ -7,3 +7,87 @@ alias serve='ruby -run -e httpd . -p 8000' # Or python -m SimpleHTTPServer :)
 
 # NOTE: On Q3 2021, Le Wagon decided to change the Web Dev curriculum default text editor
 alias stt="echo 'Launching VS Code instead of Sublime Text... (cf ~/.aliases)' && code ."
+
+########################
+# Aliases               #
+########################
+
+# Essentials
+alias c="clear"
+alias cls="clear"
+alias please="sudo"
+
+# Homebrew
+alias bubu="brew update && brew upgrade && brew cleanup"
+
+# Navigation
+alias ll="lsd -la"
+alias l="lsd"
+alias lt="lsd --tree"
+alias la='ls -a'
+alias lla='ls -la'
+alias ..="cd .."
+alias ...="cd ../.."
+#alias cd="zoxide"
+alias z="zoxide query"
+alias f="fzf"
+
+# File & folder
+alias mkdirp='mkdir -p'
+alias mkcd='mkcd() { mkdir -p "$1" && cd "$1"; }; mkcd'
+
+# Dev stuff
+alias code="cursor"
+alias vim="nvim"
+alias top="btop"
+alias cat="bat"
+alias updatebrew="~/dotfiles/scripts/brew_update.sh"
+alias dotsync="~/dotfiles/sync.sh"
+
+# Git shortcuts
+alias gs="git status"
+alias ga="git add ."
+alias gc="git commit -m"
+alias gp="git push"
+alias gl="git pull"
+alias gd="git diff | delta"
+alias gdf="git diff | diff-so-fancy"
+alias gb="git branch"
+alias gco="git checkout"
+alias gm="git merge"
+alias gr="git rebase"
+
+# LazyGit
+alias lg="lazygit"
+
+# Internet
+alias wget="wget --continue"
+alias speedtest="speedtest-cli"
+
+# Kubernetes (if you use stern etc.)
+alias k="kubectl"
+alias kgp="kubectl get pods"
+alias kgs="kubectl get svc"
+
+# Paramètres pour les projets JS
+alias ys="yarn start"
+alias yt="yarn test"
+alias yb="yarn build"
+
+# Paramètres pour les projets Python
+alias py="python"
+alias ipy="ipython"
+alias jn="jupyter notebook"
+alias jl="jupyter lab"
+alias ca="conda activate"
+alias cda="conda deactivate"
+
+
+# Alias Data Science
+alias np="numpy"
+alias pd="pandas"
+alias plt="matplotlib.pyplot"
+alias sk="scikit-learn"
+alias tf="tensorflow"
+alias pt="pytorch"
+

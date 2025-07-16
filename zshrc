@@ -1,9 +1,13 @@
+########################
+# Oh My Zsh            #
+########################
+
 ZSH=$HOME/.oh-my-zsh
 
 # You can change the theme with another one from https://github.com/robbyrussell/oh-my-zsh/wiki/themes
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
 
-# Useful oh-my-zsh plugins for Le Wagon bootcamps
+# Useful oh-my-zsh plugins
 plugins=(git gitfast last-working-dir common-aliases zsh-syntax-highlighting history-substring-search)
 
 # (macOS-only) Prevent Homebrew from reporting - https://github.com/Homebrew/brew/blob/master/docs/Analytics.md
@@ -71,3 +75,23 @@ export EDITOR=code
 # Set ipdb as the default Python debugger
 export PYTHONBREAKPOINT=ipdb.set_trace
 eval "$(direnv hook zsh)"
+
+########################
+# Eval                 #
+########################
+
+# Starship
+eval "$(starship init zsh)"
+
+# Brew shell
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Zoxide
+eval "$(zoxide init zsh)"
+
+# FZF
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Direnv
+eval "$(direnv hook zsh)"
+
